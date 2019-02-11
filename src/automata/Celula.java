@@ -76,7 +76,7 @@ public class Celula {
 	int celdasVivas = this.CheckVecinas(matriz);
 	if (viva && celdasVivas<2) {
 		viva=false;
-	} 	 if(viva && (celdasVivas==2 || celdasVivas==3)) {
+	} if(viva && (celdasVivas==2 || celdasVivas==3)) {
 		viva=true;
 	}  if (viva && celdasVivas>3) {
 		viva=false;
@@ -89,9 +89,9 @@ public class Celula {
 	//metodo con el que imprimimos si esta viva una "V" verde y si esta muerta una "M" roja
 	public void Pintar() {
 		if (viva) {
-			System.out.print ("\033[32m V"); 
+			System.out.print ("V"); 
 		} else {
-			System.out.print("\033[31m M");
+			System.out.print("M");
 		}
 		 
 	}
